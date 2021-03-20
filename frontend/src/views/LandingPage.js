@@ -1,10 +1,11 @@
 import React from 'react';
+import Features from '../components/Features'
 
 function LandingPage(){
     return(
         <div>
-            {/* Insert your created components here */}
-            <h1>Landing Page Component</h1>
+            <h1>PetFinder</h1>
+            <Features />
         </div>
     )
 }
