@@ -4,8 +4,6 @@ import Explanation from '../components/Explanation'
 function LandingPage(){
     return(
         <div>
-            {}
-
             <Explanation />
         </div>
     )
