@@ -1,0 +1,13 @@
+.jumbotron
+{
+    background-color: #e4a58f;
+    width: 95vw;
+    height: 55vh;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.my-4
+{
+    background-color: #2f5233;
+}
