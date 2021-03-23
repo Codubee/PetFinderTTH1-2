@@ -5,7 +5,6 @@ function LandingPage(){
     return(
         <div>
             {}
-            <h1>Landing Page Component</h1>
 
             <Explanation />
         </div>
