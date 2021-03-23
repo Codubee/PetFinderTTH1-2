@@ -1,7 +1,13 @@
 :root {
-    --primaryTextColor: #eeeeee;
+    --primaryTextColor: #555555;
+    --secondarTextColor: #eeeeee;
     --secondaryColor: #777777;
     --primaryColor: #555555;
+    --easterBlue: #A6E2DC;
+    --easterGreen: #97D49B;
+    --easterPink: #E4A58F;
+    --easterYellow: #ECF87F;
+    --primaryFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
 #features{
@@ -18,9 +24,9 @@
     padding: 20px;
     height: auto;
     transform: translate(7%, 30%);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 15;
+    font-family: var(--primaryFont);
+    font-weight: 20;
     font-size: xx-large;
-    background: var(--primaryColor);
+    background: var(--easterPink);
     color: var(--primaryTextColor);
 }
