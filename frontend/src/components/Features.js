@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/Features.css';
 
 function Features() {
   return (
