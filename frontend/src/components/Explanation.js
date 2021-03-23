@@ -1,4 +1,4 @@
-import '../Explanation.css';
+import '../styles/Explanation.css';
 import React from 'react';
 
 function Explanation()
