@@ -1,11 +1,11 @@
 #team{
-    width: auto;
-    height: auto;
+    width: 90vw;
+    height: 80vh;
     justify-content: center;
     margin: 3vw 3vw 3vw;
   }
   
-  #team h2{
+  #team h1{
     color: white;
     font-weight: bold;
     padding: 5px;
