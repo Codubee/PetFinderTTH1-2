@@ -1,0 +1,29 @@
+#team{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin: 3vw 3vw 3vw;
+  }
+  
+  #team h2{
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #team h4{
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+  #team h5{
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+  
