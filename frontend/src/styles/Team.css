@@ -34,6 +34,12 @@
     text-align: left;
   }
 
+  #cardStyle{
+    background-color: #E4A58F;
+    border-width: thick;
+    border-color: #333;
+  }
+
   .card{
     margin-bottom: 10em;
   }

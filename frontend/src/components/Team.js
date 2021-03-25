@@ -6,20 +6,14 @@ import {
 import '../styles/Team.css';
 import data from '../jsonData/TeamData.json'
 
-const cardStyle = {
-  backgroundColor: '#E4A58F',
-  borderWidth: 'thick',
-  borderColor: '#333',
-}
-
 function Team() {
   return (
     <div id="team">
-      <Row>
+      <Row className="justify-content-sm-center">
         {data.map((person, index) => (
           <Col sm="4">
             <div key={index}>
-              <Card body inverse style={cardStyle}>
+              <Card body inverse id="cardStyle">
                 <CardImg top width="100%" src={person.image} alt="Card image cap" />
                 <CardBody>
                   <CardTitle tag="h1">{person.name}</CardTitle>
