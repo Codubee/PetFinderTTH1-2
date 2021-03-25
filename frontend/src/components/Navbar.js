@@ -28,7 +28,6 @@ function NavBar() {
               <NavLink href="/match">Match</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Tagline</NavbarText>
         </Collapse>
       </Navbar>
     </div>
