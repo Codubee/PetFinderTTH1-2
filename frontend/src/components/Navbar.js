@@ -10,15 +10,14 @@ import {
   NavbarText
 } from 'reactstrap';
 
-const NavBar = (props) => {
+function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Pet Finder</NavbarBrand>
+        <NavbarBrand>Pet Finder</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
