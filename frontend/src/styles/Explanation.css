@@ -1,13 +1,26 @@
 .jumbotron
 {
     background-color: #a6e2dc !important;
-    width: 95vw;
-    height: 55vh;
+    width: 100vw;
+    height: 30vh;
     margin: 0 auto;
     align-self: center;
 }
 
-.my-4
+.headerline
 {
     background-color: #2f5233;
+    text-decoration-thickness: 10vh;
+}
+
+.h1Size
+{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.introText
+{
+    font-size: 1.25rem;
+    font-weight: 300;
 }
