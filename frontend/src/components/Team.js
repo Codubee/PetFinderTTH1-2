@@ -16,7 +16,7 @@ function Team() {
               <Card body inverse id="cardStyle">
                 <CardImg top width="100%" src={person.image} alt="Card image cap" />
                 <CardBody>
-                  <CardTitle tag="h1">{person.name}</CardTitle>
+                  <CardTitle tag="h2">{person.name}</CardTitle>
                   <CardSubtitle tag="h4">Major:</CardSubtitle>
                   <CardText tag="h5">{person.major}</CardText>
                   <CardSubtitle tag="h4">School:</CardSubtitle>
