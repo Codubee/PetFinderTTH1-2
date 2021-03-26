@@ -1,0 +1,37 @@
+[
+    {
+        "name":"Abigail Thomas",
+        "major": "Computer Science",
+        "school": "The University of Texas at Dallas",
+        "year": "Freshman (2020 - 2024)",
+        "image": "/images/abigail.jpg"
+    },
+    {
+        "name":"Areeba Qazi",
+        "major": "Biomedical Engineering",
+        "school": "The University of Texas at Dallas",
+        "year": "Freshman (2020 - 2024)",
+        "image": "/images/areeba.jpg"
+    },
+    {
+        "name":"Palak Bhargava",
+        "major": "Computer Science",
+        "school": "The University of Texas at Dallas",
+        "year": "Freshman (2020 - 2024)",
+        "image": "/images/palak.jpg"
+    },
+    {
+        "name":"Renee Al-Abatabaie",
+        "major": "Software Engineering",
+        "school": "The University of Texas at Dallas",
+        "year": "Senior (2017 - 2021)",
+        "image": "/images/renee.jpg"
+    },
+    {
+        "name":"Rosie Wang",
+        "major": "Software Engineering",
+        "school": "The University of Texas at Dallas",
+        "year": "Junior (2018 - 2022)",
+        "image": "/images/rosie.jpg"
+    }
+]
