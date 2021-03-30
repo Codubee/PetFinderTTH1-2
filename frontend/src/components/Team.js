@@ -23,6 +23,10 @@ function Team() {
                   <CardText tag="h5">{person.school}</CardText>
                   <CardSubtitle tag="h4">Year:</CardSubtitle>
                   <CardText tag="h5">{person.year}</CardText>
+                  <div class="btn-group">
+                      <button><a href={person.linkedIn} rel="noreferrer" target="_blank">LinkedIn</a></button>
+                      <button><a href={person.gitHub} rel="noreferrer" target="_blank">GitHub</a></button>
+                  </div>
                 </CardBody>
               </Card>
             </div>

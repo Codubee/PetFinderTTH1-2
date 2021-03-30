@@ -33,6 +33,32 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
   }
+  
+  .btn-group{
+    padding-top: 1vh;
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-group button {
+    background-color: #333; 
+    border: 2px solid #333; 
+    color: white;
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .btn-group button:hover{
+    background-color: white; 
+    border: 2px solid white; 
+    color: #333;
+  }
+
+  a:link, a:visited{
+    color: white;
+  }
 
   #cardStyle{
     background-color: #E4A58F;
@@ -41,6 +67,14 @@
   }
 
   .card{
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
   
+  @media only screen and (max-width: 575px){
+    .card{
+      margin-bottom: 10em;
+    }
+    .btn-group button {
+      font-size: 3vw;
+    }
+  }
