@@ -1,5 +1,5 @@
 #team{
-    width: 90vw;
+    width: 93vw;
     height: 80vh;
     justify-content: center;
     margin: 3vw 3vw 3vw;
@@ -15,7 +15,7 @@
   #team h2{
     color: white;
     font-weight: bold;
-    padding: 5px;
+    padding: 4px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
@@ -41,6 +41,6 @@
   }
 
   .card{
-    margin-bottom: 10em;
+    margin-bottom: 5em;
   }
   
