@@ -7,8 +7,8 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText
 } from 'reactstrap';
+import "../styles/Navbar.css";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,19 +16,19 @@ function NavBar() {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand>Pet Finder</NavbarBrand>
+      <Navbar id="navbar" light expand="md">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
+            <NavItem id="item">
               <NavLink href="/home">Home</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem id="item">
               <NavLink href="/match">Match</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
+        <NavbarBrand id="brand">Pet Finder</NavbarBrand>
       </Navbar>
     </div>
   );
