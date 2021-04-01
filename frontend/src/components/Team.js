@@ -24,8 +24,8 @@ function Team() {
                   <CardSubtitle tag="h4">Year:</CardSubtitle>
                   <CardText tag="h5">{person.year}</CardText>
                   <div class="btn-group">
-                      <button><a href={person.linkedIn} rel="noreferrer" target="_blank">LinkedIn</a></button>
-                      <button><a href={person.gitHub} rel="noreferrer" target="_blank">GitHub</a></button>
+                    <a href={person.linkedIn} rel="noreferrer" target="_blank" class="button">LinkedIn</a>
+                    <a href={person.gitHub} rel="noreferrer" target="_blank" class="button">GitHub</a>
                   </div>
                 </CardBody>
               </Card>

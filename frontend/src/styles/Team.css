@@ -20,7 +20,7 @@
     text-align: center;
   }
   #team h4{
-    color: black;
+    color: #333;
     font-weight: bold;
     padding: 3px;
     font-family: Arial, Helvetica, sans-serif;
@@ -35,35 +35,35 @@
   }
   
   .btn-group{
-    padding-top: 1vh;
+    padding-top: 0.5vh;
     width: 100%;
     justify-content: center;
   }
-  .btn-group button {
-    background-color: #333; 
-    border: 2px solid #333; 
+  
+  .button {
+    background-color: var(--primaryButtonColor); 
+    border: 2px solid var(--primaryButtonColor); 
     color: white;
-    padding: 5px 10px; 
+    padding: 7px 10px; 
     cursor: pointer; 
+    text-align: center;
+    display: inline-block;
     font-size: 1.2vw;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-left: 10px;
+    margin: 5px 5px 0 5px;
   }
-  .btn-group button:hover{
+  .button:hover{
     background-color: white; 
     border: 2px solid white; 
-    color: #333;
-  }
-
-  a:link, a:visited{
-    color: white;
+    color: var(--primaryButtonColor);
+    text-decoration: none;
   }
 
   #cardStyle{
-    background-color: #E4A58F;
+    background-color: var(--easterPink);
     border-width: thick;
-    border-color: #333;
+    border-color: var(--primaryButtonColor);
   }
 
   .card{
@@ -74,7 +74,7 @@
     .card{
       margin-bottom: 10em;
     }
-    .btn-group button {
+    .button {
       font-size: 3vw;
     }
   }
