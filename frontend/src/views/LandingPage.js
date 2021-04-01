@@ -8,7 +8,7 @@ function LandingPage(){
         <div>
             <Explanation />
             <Features />
-            <Team/>
+            <Team />
         </div>
     )
 }
