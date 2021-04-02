@@ -1,5 +1,5 @@
 #team{
-    width: 90vw;
+    width: 93vw;
     height: 80vh;
     justify-content: center;
     margin: 3vw 3vw 3vw;
@@ -15,12 +15,12 @@
   #team h2{
     color: white;
     font-weight: bold;
-    padding: 5px;
+    padding: 4px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
   #team h4{
-    color: black;
+    color: #333;
     font-weight: bold;
     padding: 3px;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,14 +33,48 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
   }
+  
+  .btn-group{
+    padding-top: 0.5vh;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .button {
+    background-color: var(--primaryButtonColor); 
+    border: 2px solid var(--primaryButtonColor); 
+    color: white;
+    padding: 7px 10px; 
+    cursor: pointer; 
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 5px 5px 0 5px;
+  }
+  .button:hover{
+    background-color: white; 
+    border: 2px solid white; 
+    color: var(--primaryButtonColor);
+    text-decoration: none;
+  }
 
   #cardStyle{
-    background-color: #E4A58F;
+    background-color: var(--easterPink);
     border-width: thick;
-    border-color: #333;
+    border-color: var(--primaryButtonColor);
   }
 
   .card{
-    margin-bottom: 10em;
+    margin-bottom: 2em;
   }
   
+  @media only screen and (max-width: 575px){
+    .card{
+      margin-bottom: 10em;
+    }
+    .button {
+      font-size: 3vw;
+    }
+  }

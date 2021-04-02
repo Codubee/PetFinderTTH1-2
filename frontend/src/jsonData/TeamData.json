@@ -4,34 +4,44 @@
         "major": "Computer Science",
         "school": "The University of Texas at Dallas",
         "year": "Freshman (2020 - 2024)",
-        "image": "/images/abigail.jpg"
+        "image": "/images/abigail.jpg",
+        "linkedIn": "https://www.linkedin.com/in/abigailthomas2020?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlYg5fGFnSFCENDhBL8SotQ%3D%3D",
+        "gitHub": "https://github.com/thomasabigail"
     },
     {
         "name":"Areeba Qazi",
         "major": "Biomedical Engineering",
         "school": "The University of Texas at Dallas",
         "year": "Freshman (2020 - 2024)",
-        "image": "/images/areeba.jpg"
+        "image": "/images/areeba.jpg",
+        "linkedIn": "https://www.linkedin.com/in/areebaqazi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BULNgKnngTo2vb2lDVryqIQ%3D%3D",
+        "gitHub": "https://github.com/areebakq"
     },
     {
         "name":"Palak Bhargava",
         "major": "Computer Science",
         "school": "The University of Texas at Dallas",
         "year": "Freshman (2020 - 2024)",
-        "image": "/images/palak.jpg"
+        "image": "/images/palak.jpg",
+        "linkedIn": "https://www.linkedin.com/in/palak-bhargava01?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8klSNzMJTHWSSm%2BU3K8ayg%3D%3D",
+        "gitHub": "https://github.com/palak-bhargava"
     },
     {
-        "name":"Renee Al-Abatabaie",
+        "name":"Renee Al-Tabatabaie",
         "major": "Software Engineering",
         "school": "The University of Texas at Dallas",
         "year": "Senior (2017 - 2021)",
-        "image": "/images/renee.jpg"
+        "image": "/images/renee.jpg",
+        "linkedIn": "https://www.linkedin.com/in/reneeal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bm03amsM0TCWEl7sF1JCuOA%3D%3D",
+        "gitHub": "https://github.com/ReneeAl"
     },
     {
         "name":"Rosie Wang",
         "major": "Software Engineering",
         "school": "The University of Texas at Dallas",
         "year": "Junior (2018 - 2022)",
-        "image": "/images/rosie.jpg"
+        "image": "/images/rosie.jpg",
+        "linkedIn": "https://www.linkedin.com/in/rosiedwang?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bt%2FhH4Gd1R8isLrClA91raQ%3D%3D",
+        "gitHub": "https://github.com/roseyume"
     }
 ]
