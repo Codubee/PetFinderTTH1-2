@@ -1,6 +1,6 @@
 #Tools{
     height: auto;
-    max-width: 30vw;
+    min-width: 30vw;
     padding: 20px;
     margin: 3vw;
     font-size: 1.5rem;
