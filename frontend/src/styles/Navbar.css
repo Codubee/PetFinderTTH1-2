@@ -1,0 +1,14 @@
+#navbar {
+    background-color: var(--easterYellow);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#item {
+    width: 75px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+#item:hover {
+    background-color: var(--lightYellow);
+}
