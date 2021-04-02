@@ -1,0 +1,10 @@
+#Tools{
+    height: auto;
+    min-width: 30vw;
+    padding: 20px;
+    margin: 3vw;
+    font-size: 1.5rem;
+    background: var(--easterBlue);
+    font-family: var(--primaryFont);
+    color: var(--primaryTextColor);
+}
