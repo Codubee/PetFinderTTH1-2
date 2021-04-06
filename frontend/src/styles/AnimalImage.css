@@ -1,0 +1,16 @@
+.carousel-item > img { 
+    width: 100%; 
+    align-items: center;
+  }
+.carousel{
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 850px) {
+    .carousel {
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+  }
