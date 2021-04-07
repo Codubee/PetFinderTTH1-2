@@ -1,0 +1,23 @@
+.buttonGroup {
+    width: 100%;
+    text-align: center;
+}
+.mp-button{
+    display: inline-block;
+    border-radius: 8px;
+    width: 6em;
+    height: 2em;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-color: var(--primaryButtonColor);
+}
+#green{
+    background-color: var(--pastelGreen);
+}
+#red{
+    background-color: var(--pastelRed);
+}
