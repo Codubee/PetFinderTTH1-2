@@ -1,11 +1,13 @@
-.carousel-item > img { 
-    width: 100%; 
-    align-items: center;
-  }
-.carousel{
-    max-width: 350px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
+img { 
+    width: 360px; 
+    margin: auto;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+#animalImage{
+  text-align: center;
+}
+
 
