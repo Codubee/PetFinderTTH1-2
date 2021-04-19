@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.toggleButton {
+    margin: 2em;
+    text-align: center;
+}
+
 .mp-button {
     display: inline-block;
     border-radius: 8px;
@@ -33,5 +38,16 @@
 
 #red:hover {
     background-color: var(--pastelLightRed);
+    color: var(--primaryButtonColor);
+}
+
+#blue {
+    background-color: var(--easterBlue);
+    margin-bottom: 1.5em;
+    width: 9em;
+}
+
+#blue:hover {
+    background-color: var(--easterLightBlue);
     color: var(--primaryButtonColor);
 }
