@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/MPbuttons.css';
 import AnimalImage from '../components/AnimalImage'
 import { Collapse, CardBody, Card } from 'reactstrap';
-
+import '../styles/MatchPage.css'
 
 function MatchPage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,6 @@ function MatchPage() {
 
     return (
         <div id="matchPage">
-            <h1>MatchPage</h1>
             <AnimalImage image={'/images/dog1.jpg'} altText="chow chow" />
             <div className="buttonGroup">
                 <button className="mp-button" id="green">YES</button>
