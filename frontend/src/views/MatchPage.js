@@ -1,31 +1,31 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import '../styles/MPbuttons.css';
 import AnimalImage from '../components/AnimalImage'
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import { Collapse, CardBody, Card } from 'reactstrap';
 
 
-function MatchPage(){
+function MatchPage() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
-    return(
+    return (
         <div id="matchPage">
             <h1>MatchPage</h1>
-            <AnimalImage image={'/images/dog1.jpg'} altText={"chow chow"}/>
-            <div class="buttonGroup">
-                <button class="mp-button" id="green">YES</button>
-                <button class="mp-button" id="red">NO</button>
+            <AnimalImage image={'/images/dog1.jpg'} altText="chow chow" />
+            <div className="buttonGroup">
+                <button className="mp-button" id="green">YES</button>
+                <button className="mp-button" id="red">NO</button>
             </div>
-            <div class="toggleButton">
-            <button color="primary" onClick={toggle} class="mp-button" id="blue">Show Matches</button>
-            <Collapse isOpen={isOpen}>
-                <Card>
-                <CardBody>
-                Match descriptions
+            <div className="toggleButton">
+                <button onClick={toggle} className="mp-button" id="blue">Show Matches</button>
+                <Collapse isOpen={isOpen}>
+                    <Card>
+                        <CardBody>
+                            Match descriptions
                 </CardBody>
-                </Card>
-            </Collapse>
+                    </Card>
+                </Collapse>
             </div>
         </div>
     )
