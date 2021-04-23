@@ -5,10 +5,15 @@
     --primaryColor: #555555;
     --primaryButtonColor: #333;
     --easterBlue: #A6E2DC;
+    --easterLightBlue: #d8f7f4;
     --easterGreen: #97D49B;
     --easterPink: #E4A58F;
     --easterYellow: #ECF87F;
     --lightYellow: #f4fda2;
+    --pastelRed: #ff6962;
+    --pastelGreen: #77dd77;
+    --pastelLightGreen: #bde7bd;
+    --pastelLightRed: #ffb6b3;
     --primaryFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 

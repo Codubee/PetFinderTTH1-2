@@ -4,10 +4,10 @@ import React from 'react';
 function Explanation()
 {
     return(
-        <div class="jumbotron">
-            <h1 class="explanationH1">Welcome to PetFinder!</h1>
-            <p class="introText">Our goal is to unite pets with their forever families.</p>
-            <hr class="headerline"></hr>
+        <div className="jumbotron">
+            <h1 className="explanationH1">Welcome to PetFinder!</h1>
+            <p className="introText">Our goal is to unite pets with their forever families.</p>
+            <hr className="headerline"></hr>
         </div>
     );
 }

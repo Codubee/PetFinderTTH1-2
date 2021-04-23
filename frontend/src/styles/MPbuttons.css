@@ -1,0 +1,53 @@
+.buttonGroup {
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.toggleButton {
+    margin: 2em;
+    text-align: center;
+}
+
+.mp-button {
+    display: inline-block;
+    border-radius: 8px;
+    width: 6em;
+    height: 2em;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    font-family: var(--primaryFont);
+    font-weight: bold;
+    border-color: var(--primaryButtonColor);
+}
+
+#green {
+    background-color: var(--pastelGreen);
+}
+
+#green:hover {
+    background-color: var(--pastelLightGreen);
+    color: var(--primaryButtonColor);
+}
+
+#red {
+    background-color: var(--pastelRed);
+}
+
+#red:hover {
+    background-color: var(--pastelLightRed);
+    color: var(--primaryButtonColor);
+}
+
+#blue {
+    background-color: var(--easterBlue);
+    margin-bottom: 1.5em;
+    width: 9em;
+}
+
+#blue:hover {
+    background-color: var(--easterLightBlue);
+    color: var(--primaryButtonColor);
+}
