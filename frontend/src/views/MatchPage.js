@@ -1,9 +1,9 @@
 import React from 'react';
-
+import ShowMatches from '../components/ShowMatches'
 function MatchPage(){
     return(
         <div>
-            <h1>MatchPage</h1>
+            <ShowMatches/>
         </div>
     )
 }
