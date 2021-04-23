@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/MPbuttons.css';
 import AnimalImage from '../components/AnimalImage'
-import { Collapse, CardBody, Card } from 'reactstrap';
+import { Collapse, Container } from 'reactstrap';
 import ShowMatches from '../components/ShowMatches'
 import '../styles/MatchPage.css'
 
@@ -20,7 +20,9 @@ function MatchPage() {
             <div className="toggleButton">
                 <button onClick={toggle} className="mp-button" id="blue">Show Matches</button>
                 <Collapse isOpen={isOpen}>
-                    <ShowMatches/>
+                    <Container>
+                        <ShowMatches />
+                    </Container>
                 </Collapse>
             </div>
         </div>
