@@ -4,8 +4,7 @@ const axios = require('axios');
 app.use(express.json());
 
 app.post('/addAnimal', function(req,res){
-
-    axios.post('https://codubee-projects-api.herokuapp.com/animal/addAnimal',req)
+    axios.post('https://codubee-projects-api.herokuapp.com/animal/addAnimal',req.body)
     .then(function (response) {
         console.log(response.data)
         res.status(200).json(response.data);
