@@ -3,7 +3,7 @@ const app = express()
 const axios = require('axios');
 app.use(express.json());
 
-app.get('/addAnimal', function(req,res){
+app.post('/addAnimal', function(req,res){
 
     const body = {
         "id":1,
