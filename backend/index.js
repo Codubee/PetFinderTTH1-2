@@ -18,4 +18,18 @@ app.get('/getAnimalDescription', function (req, res) {
     })
 })
 
+app.get('/getMatches', function(req, res){
+    axios.get('https://codubee-projects-api.herokuapp.com/animal/getMatches')
+    //if successful, sends the match data and the responce code
+    .then(function(response){
+        console.log(response.data)
+        res.status(200).json({})
+    })
+    //if fails, sends an error message and the responce code
+    .catch(function (error) {
+        console.log(error);
+        res.status(400).json({error:"An error occurred"});
+    })
+})
+
 app.listen(8080, () => console.log('Listening at localhost:8080'));
