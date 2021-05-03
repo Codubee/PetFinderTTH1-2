@@ -4,6 +4,7 @@ import AnimalImage from '../components/AnimalImage'
 import { Collapse, Container } from 'reactstrap';
 import ShowMatches from '../components/ShowMatches'
 import '../styles/MatchPage.css'
+import AnimalDescription from '../components/AnimalDescription'
 
 function MatchPage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,9 @@ function MatchPage() {
     return (
         <div id="matchPage">
             <AnimalImage image={'/images/dog1.jpg'} altText="chow chow" />
+            <div>
+                <AnimalDescription />
+            </div>
             <div className="buttonGroup">
                 <button className="mp-button" id="green">YES</button>
                 <button className="mp-button" id="red">NO</button>
