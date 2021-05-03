@@ -16,8 +16,7 @@ const Description = {
 
 function AnimalDescription()
 {
-    return
-    (
+    return(
         <div>
             <Card>
                 <CardBody>
@@ -26,7 +25,7 @@ function AnimalDescription()
                 </CardBody>
             </Card>
         </div>
-    );
+    )
 }
 
 export default AnimalDescription;
