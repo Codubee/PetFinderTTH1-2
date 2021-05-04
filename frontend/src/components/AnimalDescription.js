@@ -1,9 +1,8 @@
 import '../styles/AnimalDescription.css';
 import React from 'react';
 import {
-    Card, CardImg, CardTitle, CardText,
-    CardSubtitle, CardBody, Row, Col
-  } from 'reactstrap';
+    Card, CardTitle, CardText,
+    CardSubtitle, CardBody} from 'reactstrap';
 
 const Description = {
     "name": "Ruff",
