@@ -4,7 +4,6 @@ import {
     Card, CardImg, CardTitle, CardText,
     CardSubtitle, CardBody, Row, Col
   } from 'reactstrap';
-/*I think a card or a table without the borders for how the description should be displayed*/
 
 const Description = {
     "name": "Ruff",
@@ -17,11 +16,16 @@ const Description = {
 function AnimalDescription()
 {
     return(
-        <div>
+        <div class = "cardSize">
             <Card>
-                <CardBody>
-                    <CardTitle>Description.name</CardTitle>
-                    <CardSubtitle>Description.type, Description.sex</CardSubtitle>
+                <CardBody class = "cardDecoration">
+                    <CardText></CardText>
+                    <CardTitle>{Description.name}</CardTitle>
+                    <CardSubtitle>{Description.type}, {Description.sex}</CardSubtitle>
+                    <CardText></CardText>
+                    <CardText>{Description.name} lives at {Description.shelter_name}.</CardText>
+                    <CardText>Adopt: {Description.adoption_url}</CardText>
+                    <CardText></CardText>
                 </CardBody>
             </Card>
         </div>
