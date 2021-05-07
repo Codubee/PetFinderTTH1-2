@@ -1,0 +1,16 @@
+.cardSize
+{
+    
+    font-weight: bold;
+    width: 370px;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+.cardDecoration
+{
+    border: 3px solid black;
+    border-radius: 2%;
+    background-color: #A6E2DC;
+}
