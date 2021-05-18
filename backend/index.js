@@ -33,8 +33,6 @@ app.get('/getAnimalDescription', function (req, res) {
     })
 })
 
-app.listen(8080, () => console.log('Listening at localhost:8080'));
-
 app.get('/getWeather', function (req, res) {
 
     axios.get('https://codubee-projects-api.herokuapp.com/translate/getWeather')

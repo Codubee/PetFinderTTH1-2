@@ -4,26 +4,18 @@ import {
     Card, CardTitle, CardText,
     CardSubtitle, CardBody} from 'reactstrap';
 
-const Description = {
-    "name": "Ruff",
-    "type": "Dog",
-    "sex": "Female",
-    "shelter_name": "Shelter",
-    "adoption_url": "example.com"
-};
-
-function AnimalDescription()
+function AnimalDescription(props)
 {
     return(
         <div class = "cardSize">
             <Card>
                 <CardBody class = "cardDecoration">
                     <CardText></CardText>
-                    <CardTitle>{Description.name}</CardTitle>
-                    <CardSubtitle>{Description.type}, {Description.sex}</CardSubtitle>
+                    <CardTitle>{props.petDescription.name}</CardTitle>
+                    <CardSubtitle>{props.petDescription.type}, {props.petDescription.sex}</CardSubtitle>
                     <CardText></CardText>
-                    <CardText>{Description.name} lives at {Description.shelter_name}.</CardText>
-                    <CardText>Adopt: {Description.adoption_url}</CardText>
+                    <CardText>{props.petDescription.name} lives at {props.petDescription.shelter_name}.</CardText>
+                    <CardText>Adopt: {props.petDescription.adoption_url}</CardText>
                     <CardText></CardText>
                 </CardBody>
             </Card>
