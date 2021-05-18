@@ -12,23 +12,30 @@ const Description = {
     "adoption_url": "example.com"
 };
 
-function AnimalDescription()
+function AnimalDescription(props)
 {
-    return(
-        <div class = "cardSize">
-            <Card>
-                <CardBody class = "cardDecoration">
-                    <CardText></CardText>
-                    <CardTitle>{Description.name}</CardTitle>
-                    <CardSubtitle>{Description.type}, {Description.sex}</CardSubtitle>
-                    <CardText></CardText>
-                    <CardText>{Description.name} lives at {Description.shelter_name}.</CardText>
-                    <CardText>Adopt: {Description.adoption_url}</CardText>
-                    <CardText></CardText>
-                </CardBody>
-            </Card>
-        </div>
-    )
+    if(Object.keys){
+        console.log(props.data);
+        return(
+            <div class = "cardSize">
+                <Card>
+                    <CardBody class = "cardDecoration">
+                        <CardText></CardText>
+                        <CardTitle>{props.data.name}</CardTitle>
+                        <CardSubtitle>{props.data.type}, {props.data.sex}</CardSubtitle>
+                        <CardText></CardText>
+                        <CardText>{props.data.name} lives at {props.data.shelter_name}.</CardText>
+                        <CardText><a href={props.data.adoption_url}>Adopt Me</a></CardText>
+                        <CardText></CardText>
+                    </CardBody>
+                </Card>
+            </div>
+        )
+    }
+    else{
+        return(<></>)
+    }
+    
 }
 
 export default AnimalDescription;

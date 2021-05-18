@@ -5,11 +5,12 @@ import { Collapse, Container } from 'reactstrap';
 import ShowMatches from '../components/ShowMatches'
 import '../styles/MatchPage.css'
 import AnimalDescription from '../components/AnimalDescription'
+import axios from 'axios'
 
 class MatchPage extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { isOpen: false }
+        this.state = { isOpen: false, data: {}}
         this.setIsOpen = this.setIsOpen.bind(this)
     }
 
@@ -17,14 +18,24 @@ class MatchPage extends React.Component {
         var open = !this.state.isOpen;
         this.setState({ isOpen: open })
     }
+
+    componentDidMount() {
+        axios.get("/getAnimalDescription")
+            .then((response) => {
+                console.log(response.data);
+                this.setState({
+                    data: response.data
+                })
+            })
+            .catch(err => console.error(err));
+    }
+
     render() {
-
-
         return (
             <div id="matchPage">
-                <AnimalImage image={'/images/dog1.jpg'} altText="chow chow" />
+                <AnimalImage image={this.state.data.image} altText="chow chow" />
                 <div>
-                    <AnimalDescription />
+                    <AnimalDescription data={this.state.data}/>
                 </div>
                 <div className="buttonGroup">
                     <button className="mp-button" id="green">YES</button>
