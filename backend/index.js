@@ -21,14 +21,14 @@ app.get('/getAnimalDescription', function (req, res) {
 app.get('/getMatches', function(req, res){
     //gets the query parameter
     console.log(req.query)
-    let name = req.query.name;
+    let id = req.query.id;
 
     //Make a get request with the name query parameter
-    axios.get('https://codubee-projects-api.herokuapp.com/animal/getMatches'+name)
+    axios.get('https://codubee-projects-api.herokuapp.com/animal/getMatches?id='+id)
     .then(function (response) {
         console.log(response.data);
          //if successful, sends the match data and the responce code
-        res.status(200).json({});
+        res.status(200).json(response.data);
     })
     .catch(function (error) {
         //if fails, sends an error message and the responce code
