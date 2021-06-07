@@ -6,21 +6,27 @@ import {
 
 function AnimalDescription(props)
 {
-    return(
-        <div class = "cardSize">
-            <Card>
-                <CardBody class = "cardDecoration">
-                    <CardText></CardText>
-                    <CardTitle>{props.petDescription.name}</CardTitle>
-                    <CardSubtitle>{props.petDescription.type}, {props.petDescription.sex}</CardSubtitle>
-                    <CardText></CardText>
-                    <CardText>{props.petDescription.name} lives at {props.petDescription.shelter_name}.</CardText>
-                    <CardText>Adopt: {props.petDescription.adoption_url}</CardText>
-                    <CardText></CardText>
-                </CardBody>
-            </Card>
-        </div>
-    )
+    if(Object.keys(props.data)){
+        return(
+            <div class = "cardSize">
+                <Card>
+                    <CardBody class = "cardDecoration">
+                        <CardText></CardText>
+                        <CardTitle>{props.data.name}</CardTitle>
+                        <CardSubtitle>{props.data.type}, {props.data.sex}</CardSubtitle>
+                        <CardText></CardText>
+                        <CardText>{props.data.name} lives at {props.data.shelter_name}.</CardText>
+                        <CardText><a href={props.data.adoption_url}>Adopt Me</a></CardText>
+                        <CardText></CardText>
+                    </CardBody>
+                </Card>
+            </div>
+        )
+    }
+    else{
+        return(<></>)
+    }
+  
 }
 
 export default AnimalDescription;
