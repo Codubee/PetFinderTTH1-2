@@ -4,18 +4,9 @@ import {
     Card, CardTitle, CardText,
     CardSubtitle, CardBody} from 'reactstrap';
 
-const Description = {
-    "name": "Ruff",
-    "type": "Dog",
-    "sex": "Female",
-    "shelter_name": "Shelter",
-    "adoption_url": "example.com"
-};
-
 function AnimalDescription(props)
 {
-    if(Object.keys){
-        console.log(props.data);
+    if(Object.keys(props.data)){
         return(
             <div class = "cardSize">
                 <Card>

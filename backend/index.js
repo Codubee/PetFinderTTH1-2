@@ -9,7 +9,6 @@ app.use(cors())
 app.post('/addAnimal', function(req,res){
     axios.post('https://codubee-projects-api.herokuapp.com/animal/addAnimal',req.body)
     .then(function (response) {
-        console.log(response.data)
         res.status(200).json(response.data);
     })
     .catch(function (error) {
@@ -23,7 +22,6 @@ app.get('/getAnimalDescription', function (req, res) {
     axios.get('https://codubee-projects-api.herokuapp.com/animal/getAnimalDescription')
     .then(function (response) {
         // handle success and send back a 200 response with the data
-        console.log(response.data);
         res.status(200).json(response.data);
     })
     .catch(function (error) { 
@@ -35,13 +33,12 @@ app.get('/getAnimalDescription', function (req, res) {
 
 app.get('/getMatches', function(req, res){
     //gets the query parameter
-    console.log(req.query)
     let id = req.query.id;
 
     //Make a get request with the name query parameter
     axios.get('https://codubee-projects-api.herokuapp.com/animal/getMatches?id='+id)
     .then(function (response) {
-        console.log(response.data);
+
          //if successful, sends the match data and the responce code
         res.status(200).json(response.data);
     })
@@ -57,7 +54,7 @@ app.get('/getWeather', function (req, res) {
     axios.get('https://codubee-projects-api.herokuapp.com/translate/getWeather')
     .then(function (response) {
         // handle success and send back a 200 response with the data
-        console.log(response.data);
+
         res.status(200).json(response.data);
     })
     .catch(function (error) { 
