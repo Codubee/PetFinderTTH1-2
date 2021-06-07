@@ -35,7 +35,7 @@ function AnimalDescription(props)
     else{
         return(<></>)
     }
-    
+  
 }
 
 export default AnimalDescription;

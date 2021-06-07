@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/MPbuttons.css';
 import AnimalImage from '../components/AnimalImage'
 import { Collapse, Container } from 'reactstrap';
@@ -12,6 +12,7 @@ class MatchPage extends React.Component {
         super(props)
         this.state = { isOpen: false, data: {}}
         this.setIsOpen = this.setIsOpen.bind(this)
+        this.addAnimal = this.addAnimal.bind(this)
     }
 
     setIsOpen() {
@@ -29,6 +30,23 @@ class MatchPage extends React.Component {
             })
             .catch(err => console.error(err));
     }
+  
+    addAnimal() {
+        console.log("addAnimal")
+        const req = {
+            "id":1,
+            "record": this.state.petDescription
+        }
+
+        axios.post("/addAnimal", req)
+        .then((response) => {
+            console.log(response.data)
+        })
+        .catch(function (error) { 
+            //handle error and send back error message
+            console.log(error);
+        })
+    }
 
     render() {
         return (
@@ -36,9 +54,10 @@ class MatchPage extends React.Component {
                 <AnimalImage image={this.state.data.image} altText="chow chow" />
                 <div>
                     <AnimalDescription data={this.state.data}/>
+
                 </div>
                 <div className="buttonGroup">
-                    <button className="mp-button" id="green">YES</button>
+                    <button className="mp-button" id="green" onClick={this.addAnimal} >YES</button>
                     <button className="mp-button" id="red">NO</button>
                 </div>
                 <div className="toggleButton">
